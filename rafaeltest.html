@@ -1,0 +1,54 @@
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script> 
+	<link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<title>Nonguilhott</title>
+</head>
+
+
+<body>
+	<section>
+        <a>
+            ola mundo
+        </a>
+	 </section>
+
+        </body>
+
+
+<script>
+        function fibonacciSequence(n) {
+    var fibSequence = [0, 1];
+    while (fibSequence[fibSequence.length - 1] < n) {
+        var nextNumber = fibSequence[fibSequence.length - 1] + fibSequence[fibSequence.length - 2];
+        fibSequence.push(nextNumber);
+    }
+    return fibSequence;
+}
+
+function checkFibonacci(number, sequence) {
+    if (sequence.includes(number)) {
+        return `O número ${number} pertence à sequência de Fibonacci.`;
+    } else {
+        return `O número ${number} não pertence à sequência de Fibonacci.`;
+    }
+}
+
+function main() {
+    var num = parseInt(prompt("Digite um número para verificar se ele pertence à sequência de Fibonacci: "));
+    var sequence = fibonacciSequence(num);
+    alert(checkFibonacci(num, sequence));
+}
+
+main();
+</script>
+
+
+
+
+
+
+        <script src="js/jquery.js"></script>
+<script src="js/menuScroll.js"></script>
